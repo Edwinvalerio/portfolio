@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma-rtl.min.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <meta charset="UTF-8" />
@@ -8,6 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
     <title>Document</title>
   </head>
 
@@ -17,9 +22,9 @@
         <a href="#">Home</a>
       </div>
       <div>
-        <a href="#">Project</a>
-        <a href="#">Contact</a>
-        <a href="#">Resume</a>
+        <a id="Resume_link" target="_blank" href="/resume/edwin_valerio_updated.pdf">Resume</a>
+        <a id="project_link">Project</a>
+        <a id="contact_link">Contact</a>
       </div>
     </nav>
 
@@ -39,110 +44,152 @@
     </div>
 
     <div class="container">
-      <section class="projects-container">
+      <section class="projects-container" id="projects-container">
         <!-- Food -->
-        <div class="columns">
-          <div class="column">
-            <div class="project_image" style="background-image: url(assets/food.png)"></div>
-          </div>
-          <div class="column is-three-quarters">
-            <h1>Food Recipes</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            </p>
+        <div data-aos="fade-right">
+          <div class="columns">
+            <div class="column">
+              <div class="project_image" style="background-image: url(assets/food.png)"></div>
+            </div>
+            <div class="column is-three-quarters">
+              <h1>Food Recipes</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy
+              </p>
+            </div>
           </div>
         </div>
         <!-- Food -->
 
         <!-- Canada Citizenship IOS/Android -->
-        <div class="columns">
-          <div class="column is-three-quarters">
-            <h1>Canada Citizenship IOS/Android</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            </p>
-          </div>
-          <div class="column">
-            <div class="project_image" style="background-image: url(assets/canada.png)"></div>
+        <div data-aos="fade-left">
+          <div class="columns">
+            <div class="column is-three-quarters">
+              <h1>Canada Citizenship IOS/Android</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy
+              </p>
+            </div>
+            <div class="column">
+              <div class="project_image" style="background-image: url(assets/canada.png)"></div>
+            </div>
           </div>
         </div>
         <!-- Canada Citizenship IOS/Android -->
 
         <!-- US Citizenship IOS/Android -->
-        <div class="columns">
-          <div class="column">
-            <div class="project_image" style="background-image: url(assets/unitedstate.png)"></div>
-          </div>
-          <div class="column is-three-quarters">
-            <h1>US Citizenship IOS/Android</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            </p>
+        <div data-aos="fade-right">
+          <div class="columns">
+            <div class="column">
+              <div class="project_image" style="background-image: url(assets/unitedstate.png)"></div>
+            </div>
+            <div class="column is-three-quarters">
+              <h1>US Citizenship IOS/Android</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy
+              </p>
+            </div>
           </div>
         </div>
         <!-- US Citizenship IOS/Android -->
         <!-- Driver License Test IOS/Android -->
-        <div class="columns">
-          <div class="column is-three-quarters">
-            <h1>Driver License Test IOS/Android</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            </p>
-          </div>
-          <div class="column">
-            <div class="project_image" style="background-image: url(assets/driver.png)"></div>
+        <div data-aos="fade-left">
+          <div class="columns">
+            <div class="column is-three-quarters">
+              <h1>Driver License Test IOS/Android</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy
+              </p>
+            </div>
+            <div class="column">
+              <div class="project_image" style="background-image: url(assets/driver.png)"></div>
+            </div>
           </div>
         </div>
         <!-- Driver License Test IOS/Android -->
         <!-- food recipes -->
-        <div class="columns">
-          <div class="column">
-            <div class="project_image" style="background-image: url(assets/food\ Delivery.PNG)"></div>
-          </div>
-          <div class="column is-three-quarters">
-            <h1>Food Delivery</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            </p>
+        <div data-aos="fade-right">
+          <div class="columns">
+            <div class="column">
+              <div class="project_image" style="background-image: url(assets/food\ Delivery.PNG)"></div>
+            </div>
+            <div class="column is-three-quarters">
+              <h1>Food Delivery</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy
+              </p>
+            </div>
           </div>
         </div>
         <!-- food recipes -->
         <!-- Food -->
-        <div class="columns">
-          <div class="column is-three-quarters">
-            <h1>De-icing Manager</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            </p>
-          </div>
-          <div class="column">
-            <div class="project_image" style="background-image: url(assets/deicing.jpg)"></div>
+        <div data-aos="fade-left">
+          <div class="columns">
+            <div class="column is-three-quarters">
+              <h1>De-icing Manager</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy
+              </p>
+            </div>
+            <div class="column">
+              <div class="project_image" style="background-image: url(assets/deicing.jpg)"></div>
+            </div>
           </div>
         </div>
         <!-- Food -->
         <!-- Food -->
-        <div class="columns">
-          <div class="column">
-            <div class="project_image" style="background-image: url(assets/flights.jpg)"></div>
-          </div>
-          <div class="column is-three-quarters">
-            <h1>Emirates status tracker</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            </p>
+        <div data-aos="fade-right">
+          <div class="columns">
+            <div class="column">
+              <div class="project_image" style="background-image: url(assets/flights.jpg)"></div>
+            </div>
+            <div class="column is-three-quarters">
+              <h1>Emirates status tracker</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy
+              </p>
+            </div>
           </div>
         </div>
         <!-- Food -->
       </section>
     </div>
 
-    <footer></footer>
+    <footer id="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column">1</div>
+          <div class="column">
+              <h1>Say Hello</h1>
+              <p><i class="fas fa-envelope-open"></i><a href="mailto:Busine@live.com"><p>Email: Busine@live.com</p></a></p>
+          </div>
+        </div>
+
+          <div class="center-items">
+            <p>
+              Designed and developed by <a target="_blank" href="https://github.com/Edwinvalerio"><strong>Edwin Valerio</strong></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
+  <script src="js/main.js"></script>
 </html>
